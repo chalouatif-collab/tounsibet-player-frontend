@@ -233,13 +233,12 @@
             </div>
         </aside>
 
-        <!-- 2️⃣ المنطقة المركزية (محطمة للشكل القديم ومبتكرة بالكامل) -->
+        <!-- 2️⃣ المنطقة المركزية -->
         <div class="flex-grow flex flex-col min-w-0 w-full relative space-y-6 pt-2">
 
-            <!-- قسم الرئيسية بتصميم مبتكر وخاص بالهوية الجديدة -->
+            <!-- قسم الرئيسية -->
             <div id="pane-accueil" class="player-view-section block w-full space-y-8">
 
-                <!-- هيرو فخم ومبتكر (Hero Section) -->
                 <div class="relative rounded-3xl p-8 md:p-12 overflow-hidden shadow-2xl border border-tRed/30 bg-gradient-to-br from-tGreyCard via-[#15161a] to-black group">
                     <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-tRed/15 rounded-full blur-3xl pointer-events-none"></div>
                     
@@ -264,7 +263,6 @@
                     </div>
                 </div>
 
-                <!-- شريط المزودين السريع الأنيق -->
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                     <div onclick="switchSection('casino'); initCasinoLobby();" class="bg-tGreyCard/80 border border-white/5 hover:border-tRed p-4 rounded-2xl flex items-center gap-3 cursor-pointer transition-all group">
                         <div class="w-10 h-10 rounded-xl bg-tRed/10 flex items-center justify-center text-tRed text-lg group-hover:bg-tRed group-hover:text-white transition">
@@ -304,7 +302,6 @@
                     </div>
                 </div>
 
-                <!-- شبكة ألعاب اليوم -->
                 <div class="space-y-4">
                     <div class="flex justify-between items-center px-1">
                         <h3 class="text-white font-black text-lg flex items-center gap-2"><i class="fas fa-fire text-tRed animate-pulse"></i> Jeux Tendances du Moment</h3>
@@ -434,7 +431,7 @@
         </button>
     </div>
 
-    <!-- 🌟 الشريط الجانبي للهاتف ومستلزمات الحساب (بتصميم جديد متوافق) 🌟 -->
+    <!-- 🌟 الشريط الجانبي للهاتف ومستلزمات الحساب (MENU VIP) 🌟 -->
     <div id="profile-overlay" onclick="toggleProfileSidebar()" class="fixed inset-0 bg-black/80 z-[590] hidden backdrop-blur-sm transition-opacity"></div>
 
     <div id="profile-sidebar" class="fixed right-0 top-0 h-full w-72 md:w-80 bg-tGreyCard border-l border-white/10 z-[600] shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
@@ -464,14 +461,21 @@
                 </div>
             </div>
 
-            <div id="sidebar-account-section" class="hidden border-t border-white/5 pt-4">
-                <h4 class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 ml-1">Historique & Compte</h4>
+            <!-- خيارات الحساب التاريخية والـ Cashback التي طلبتها -->
+            <div id="sidebar-account-section" class="border-t border-white/5 pt-4">
+                <h4 class="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3 ml-1">Mon Compte & Historique</h4>
                 <div class="space-y-2">
-                    <a href="javascript:void(0)" class="flex items-center gap-3 text-gray-300 hover:text-white hover:bg-tGreyLight p-3.5 rounded-xl transition text-sm font-bold border border-white/5">
-                        <i class="fas fa-history text-tRed w-5 text-center"></i> Historique des jeux
+                    <a href="javascript:void(0)" class="w-full flex items-center gap-3 bg-tGreyBase hover:bg-tGreyLight text-white p-3.5 rounded-xl transition font-bold text-sm border border-white/5">
+                        <i class="fas fa-history text-tRed w-5 text-center"></i> Historique de casino
                     </a>
-                    <a href="javascript:void(0)" class="flex items-center gap-3 text-gray-300 hover:text-white hover:bg-tGreyLight p-3.5 rounded-xl transition text-sm font-bold border border-white/5">
-                        <i class="fas fa-exchange-alt text-yellow-500 w-5 text-center"></i> Transactions & Dépôts
+                    <a href="javascript:void(0)" class="w-full flex items-center gap-3 bg-tGreyBase hover:bg-tGreyLight text-white p-3.5 rounded-xl transition font-bold text-sm border border-white/5">
+                        <i class="fas fa-exchange-alt text-yellow-500 w-5 text-center"></i> Historique de transfert
+                    </a>
+                    <a href="javascript:void(0)" class="w-full flex items-center gap-3 bg-tGreyBase hover:bg-tGreyLight text-white p-3.5 rounded-xl transition font-bold text-sm border border-white/5">
+                        <i class="fas fa-ticket-alt text-blue-400 w-5 text-center"></i> Mes paris
+                    </a>
+                    <a href="javascript:void(0)" class="w-full flex items-center gap-3 bg-tGreyBase hover:bg-tGreyLight text-white p-3.5 rounded-xl transition font-bold text-sm border border-white/5">
+                        <i class="fas fa-hand-holding-usd text-green-400 w-5 text-center"></i> Cashback d'aujourd'hui
                     </a>
                 </div>
             </div>
@@ -518,8 +522,7 @@
 
     <!-- حاوية الإشعارات -->
     <div id="toast-container" class="fixed top-5 right-5 z-[1000] flex flex-col gap-2 w-full max-w-[280px] md:max-w-xs px-4 pointer-events-none"></div>
-    
-    
+
     <script>
         // ================= التبديل بين الأقسام =================
         function switchSection(sectionId) {
