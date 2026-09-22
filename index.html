@@ -242,17 +242,15 @@
                 
                 <!-- أزرار تسجيل الدخول -->
                 <div id="auth-buttons-container" class="flex items-center gap-2">
-                    <!-- 🌟 زر تسجيل الدخول الجديد (أكثر وضوحاً) -->
-                    <button onclick="openLoginModal()" class="bg-tGreyBase border border-white/20 hover:border-white hover:bg-white/10 text-white font-bold text-[10px] md:text-xs px-4 py-2 rounded-full transition-all uppercase tracking-wide">
+                    <button onclick="openLoginModal()" class="bg-tGreyBase border border-white/20 hover:border-white hover:bg-white/10 text-white font-bold text-[10px] md:text-xs px-4 py-2 rounded-full transition-all uppercase tracking-wide shadow-md">
                         Connexion
                     </button>
-                    <!-- زر التسجيل -->
                     <button onclick="openRegisterModal()" class="btn-red-glow text-white font-black text-[10px] md:text-xs px-5 py-2 rounded-full transition-all shadow-lg uppercase tracking-wide hidden sm:block">
                         S'inscrire
                     </button>
                 </div>
 
-                <!-- بروفايل الرصيد (يظهر عند تسجيل الدخول) -->
+                <!-- بروفايل الرصيد -->
                 <div id="top-user-profile" class="hidden items-center gap-2 md:gap-3 cursor-pointer group" onclick="toggleProfileSidebar()">
                     <div class="flex flex-col text-right">
                         <span class="text-[9px] text-gray-400 uppercase">Solde</span>
@@ -281,6 +279,8 @@
 
             </div>
         </nav>
+    </div> 
+    
     <!-- شريط التصنيفات السريع (الروابط الإضافية لنظام ألفا بات مدمجة بستايل تونسي بات) -->
     <div class="w-full max-w-[1700px] mx-auto px-4 mt-[85px] md:mt-[95px] mb-2">
         <div class="flex gap-2 overflow-x-auto text-xs font-bold text-gray-300 no-scrollbar py-2">
